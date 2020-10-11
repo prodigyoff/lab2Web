@@ -1,0 +1,234 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px 160px 0px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: flex-start;
+    height: 70px;
+    margin-top: -12px;
+    margin-bottom: 90px;
+}
+
+.logo-label {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    color: #37447E;
+}
+
+.top-nav ul {
+    display: flex;
+}
+
+.nav-label {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #505F98;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-container button {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.learn-more-button {
+    width: 105px;
+    height: 30px;
+    background: #111b47;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 13px;
+    margin-left: 47px;
+    margin-top: 20px;
+}
+
+.buy-now-button {
+    width: 105px;
+    height: 30px;
+    background: #FFD166;
+    border-radius: 2px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 13px;
+    margin-top: 20px;
+}
+
+@media(max-width: 767px) {
+    .top-nav {
+        display: none;
+    }
+    .nav-container button {
+        display: none;
+    }
+    .menu-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border: 2px solid #505F98;
+    }
+    .menu-button-burger {
+        width: 15px;
+        height: 4px;
+        background: #505F98;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-button-burger::before, .menu-button-burger::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background: #505F98;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-button-burger::before {
+        transform: translateY(-5px);
+    }
+    .menu-button-burger::after {
+        transform: translateY(5px);
+    }
+    .menu-button.open .menu-button-burger {
+        transform: translateX(-15px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-button.open .menu-button-burger::before {
+        transform: rotate(45deg) translate(10.5px, -10.5px);
+    }
+    .menu-button.open .menu-button-burger::after {
+        transform: rotate(-45deg) translate(10.5px, 10.5px);
+    }
+    .top-nav.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-label {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo-label {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    .logo-header {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .top-nav ul {
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 0px;
+        padding: 0px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    .logo-label {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    .nav-label {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .logo-header {
+        margin-top: 2%;
+        margin-bottom: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .top-nav ul {
+        flex-direction: row;
+        margin-top: 8%;
+    }
+    .container {
+        margin-left: 10%;
+        margin-right: 0px;
+    }
+    .nav-container button {
+        margin-top: 28px;
+    }
+}
+
+@media(min-width:1024px) and (max-width: 1279px) {
+    .introduce-header-container {
+        max-width: 90%;
+    }
+    .logo-label {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    .nav-label {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .logo-header {
+        margin-top: 2%;
+        margin-bottom: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .top-nav ul {
+        flex-direction: row;
+        margin-top: 8%;
+    }
+    .nav-container button {
+        margin-top: 28px;
+    }
+}
+
+@media(min-width:3840px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

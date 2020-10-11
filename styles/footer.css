@@ -1,0 +1,114 @@
+footer {
+    position: relative;
+    background: #E7ECFF;
+    opacity: 80%;
+    height: 260px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.lpnu-logo {
+    position: absolute;
+    color: #939EA4;
+    text-transform: uppercase;
+    top: 0;
+    margin-left: 12%;
+}
+
+.bot-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iot-button {
+    border: none;
+    color: white;
+    background-color: #111B47;
+    height: 26px;
+    width: 108px;
+}
+
+.footer-line {
+    position: absolute;
+    left: 12%;
+    top: 30%;
+    height: 1px;
+    width: 75%;
+    background: #CDD1D4;
+}
+
+.bot-nav ul {
+    display: flex;
+    justify-content: space-around;
+    color: #929ECC;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.bot-nav ul li {
+    width: 116px;
+}
+
+.bot-nav ul li a {
+    margin: 0 auto;
+}
+
+.bot-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.socials-sizing {
+    width: 16px;
+    height: 16px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 15px;
+}
+
+@media(max-width: 767px) {
+    footer {
+        height: 100%;
+    }
+    .bot-button {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .socials-sizing {
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .bot-nav ul li {
+        width: 65px;
+        margin: 0px;
+    }
+    .bot-nav ul li a {
+        margin: 0px;
+    }
+}
+
+@media(min-width: 768px) {
+    footer {
+        height: 100%;
+    }
+    .bot-button {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .socials-sizing {
+        margin-bottom: 1em;
+    }
+}

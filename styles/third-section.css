@@ -1,0 +1,129 @@
+.packages-info {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    width: 1200px;
+    margin-left: 140px;
+}
+
+.package {
+    width: 350px;
+}
+
+.prices {
+    text-transform: uppercase;
+    color: #37447E;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.packages-headers {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.packages-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #5D6970;
+}
+
+.package-buttons {
+    display: flex;
+}
+
+.buttons {
+    border: none;
+    color: white;
+    background-color: #111B47;
+    height: 26px;
+    width: 165px;
+}
+
+@media(max-width: 767px) {
+    .packages-info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .packages-text {
+        margin-top: 5px;
+    }
+    .package {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .prices {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+    .packages-headers {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .packages-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    .section-third {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .packages-info {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .package {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .prices {
+        margin-top: 10%;
+    }
+    .packages-headers {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media(min-width:1024px) and (max-width: 1279px) {
+    .packages-info {
+        justify-content: space-around;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
