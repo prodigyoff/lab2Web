@@ -63,6 +63,17 @@ a {
     margin-top: 20px;
 }
 
+.learn-more-button:hover {
+    transition: .5s;
+    background: #37447E;
+    font-weight: 700;
+}
+
+.learn-more-button:active {
+    width: 120px;
+    height: 40px;
+}
+
 .buy-now-button {
     width: 105px;
     height: 30px;
@@ -74,6 +85,27 @@ a {
     font-size: 12px;
     margin: 13px;
     margin-top: 20px;
+}
+
+.buy-now-button:hover {
+    transition: .5s;
+    background: moccasin;
+    font-weight: 700;
+}
+
+.buy-now-button:active {
+    width: 120px;
+    height: 40px;
+}
+
+.nav-label:hover {
+    transition: .5s;
+    color: grey;
+}
+
+.nav-label:active {
+    transition: .5s;
+    font-size: 20px;
 }
 
 @media(max-width: 767px) {

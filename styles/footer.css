@@ -33,6 +33,17 @@ footer {
     width: 108px;
 }
 
+.iot-button:hover {
+    transition: .5s;
+    background-color: indigo;
+}
+
+.iot-button:active {
+    transition: .5s;
+    width: 115px;
+    height: 31px;
+}
+
 .footer-line {
     position: absolute;
     left: 12%;

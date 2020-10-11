@@ -49,6 +49,17 @@
     width: 165px;
 }
 
+.buttons:hover {
+    transition: .5s;
+    background: #37447E;
+}
+
+.buttons:active {
+    transition: .5s;
+    width: 175px;
+    height: 31px;
+}
+
 @media(max-width: 767px) {
     .packages-info {
         justify-content: center;

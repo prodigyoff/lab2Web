@@ -1,8 +1,8 @@
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.top-nav');
 let menuOpen = false;
-menuButton.addEventListener('click', () =>{
-    if(!menuOpen){
+menuButton.addEventListener('click', () => {
+    if (!menuOpen) {
         menuButton.classList.add('open');
         navLinks.classList.add('show');
         menuOpen = true;
